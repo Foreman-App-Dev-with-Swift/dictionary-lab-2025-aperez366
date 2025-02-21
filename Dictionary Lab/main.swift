@@ -27,62 +27,67 @@ print("\n PROBLEM 1.0 : CREATE YOUR OWN \n")
 //Create a dictionary called mappingIntegers that that maps an integer (1) to its English word (one). And print it.
 
  
- 
- 
+var mappingIntegers: [Int: String] = [1 : "one"]
+ print(mappingIntegers)
+
 print("\n PROBLEM 1.1  : TYPE OF DICTIONARY \n")
 //Add a comment describing the type of the dictionary you just made, explain why it is that type. Simple. Read and print the comment below.
 
  
- 
+ print("The type of dictionary I just made is [Int: String]. it is an interger and the value is a string.")
  
 print("\n PROBLEM 2.0 : ADVANCED DICTIONARY \n")
 //Create a dictionary called favoriteWords that maps three words to its definition. Yes, you have to look up the definitions.
 //Then print favoriteWords.
 //Use the words cumulative, mnemonic, and satire. 
 
- 
- 
+var favoriteWords: [String: String] = ["Cumulative" : "increase of growing by accumalation or successive addition" , "mnemonic" : "a device such as a pattern of letters, ideas, or associations that assists in remembering something" , "Satire" : "the use of humor, irony to expose and mock people"]
+ print(favoriteWords)
  
  
 print("\n PROBLEM 2.0.1 : WHAT HAPPENED IN 2.0? \n")
 //Print out what happened after running 2.0.
  
- 
+print("After running 2.0 the words copied and right next to it the meanings of the words were defined.")
+
 print("\n PROBLEM 2.0.2 : ACCESSING A DICTIONARY THROUGH A KEY \n")
  //The way we can access a dictionary and store it to a variable is by accessing the KEY ["..."] of the dictionary, this will take the associated VALUE with the inputted KEY ["..."]
 //Access practiceDictionary with the key rigmarole and store it to new variable called practice. Then print practice.
  //Ignore the yellow warning for now. Notice the results and go to 2.0.3
  
- 
- 
+ var practice = practiceDictionary["ringmarole"]
+ print(practice)
+
 print("\n PROBLEM 2.0.3 : STATE RESULT OF 2.0.2 \n")
-//Record the result of 2.0.2 from the console below in a print statement. Don't worry if you don't understand it yet. 
+//Record the result of 2.0.2 from the console below in a print statement. Don't worry if you don't understand it yet.
 
  print("The console says Optional (a lengthy and complicated procedure)")
  
 print("\n PROBLEM 2.1.0 : ACCESSING DICTIONARY DATA \n")
 // Access the the value (.values) you created in Problem 2.0 and print it out. Observe the result in the console.
 
- 
+print(favoriteWords.values)
  
 print("\n PROBLEM 2.1.1 : WHAT HAPPENED IN 2.1 \n")
 // Print out what happened when you ran 2.1.0
- 
+ print("After running 2.1.0 it says accessing dictionary data and only the definitions of the words showed up.")
  
 print("\n PROBLEM 2.2 : DATA TYPE OF DICTIONARY \n")
 //what is the type of the outputted variable from Problem 2.1.0? Was it what you expected. Print out your answer with full sentences.
 //Don't kill yourself over this answer. Just try.
- 
+ print("When I ran it only the answers of the words showed up because the only values were printed and the definitions were the values in this case.")
  
  
 print("\n PROBLEM 2.3.0 : COUNTING ITEMS IN THE DICTIONARY \n")
 // Use built in dictionary methods to count the amount of elements in the dictionary you created in Problem 2.1. Print it using the .count attribute. Observe the result and continue.
 
+print(favoriteWords.count)
  
  
 print("\n PROBLEM 2.3.1 : WHAT HAPPENED IN 2.3.0? \n")
 //Print out what resulted in 2.3.0 and why that result.
- print("The number 3 printed out indicating there are three items in the dictionary.")
+
+print("The number 3 printed out indicating there are three items in the dictionary.")
 
  
 print(" \n PROBLEM 2.4 : ITERATING THROUGH THE DICTIONARY \n")
@@ -95,17 +100,20 @@ print(" \n PROBLEM 2.4 : ITERATING THROUGH THE DICTIONARY \n")
  //Ignore yellow warning.
  
 
- 
- 
+print(favoriteWords.keys)
+for (key,value) in favoriteWords{
+    print(value + "\n")
+}
+    
 print("\n PROBLEM 2.4.1 : WHAT HAPPENED IN 2.4?")
 //Print out what happened when you ran 2.4.
  
- 
+ print("After I ran 2.4 it put the words and on a seperate spot it defined the meaning of the words")
  
  print(" \n PROBLEM 2.5.0 : REMOVING ITEMS FROM DICTIONARY \n")
 // Use the built in dictionary method to remove all current items from your dictionary that you created in Problem 2.0. Print it out and observe the results.
 
- 
+
  
 print("\n PROBLEM 2.5.1 : WHAT HAPPENED TO 2.5.0? \n")
 //Print out what happened in 2.5.0 and what it indicates.
